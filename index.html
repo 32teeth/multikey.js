@@ -7,40 +7,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>32teeth.org</title>
 <meta name="description" content="This is where i live in the internet">
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/controller.css" />
 </head>
 <body>
 
-<section class="joystick">
-  <header>multikey.js</header>
-  <div class="stick">
-    <div class="shadow"></div>
-    <div class="shaft"></div>
-    <div class="ball" id="ball"></div>
+<div class="container fluid">
+  <br>
+  <div class="row">
+    <aside class="col-sm-6">
+      <div class="jumbotron text-left">
+        <h1>welcome</h1>
+        <small class="label label-default">multikey.js is a multi key press tracker and broadcaster</small>
+        <hr>
+        <p>ideal for extending into your canvas or html5 game</p>
+        <p><a class="btn btn-primary btn-lg" href="https://github.com/32teeth/multikeyjs" role="button" target="_blank">GitHub</a></p>
+      </div>    
+    </aside>
+    <section class=" col-sm-6 text-center">
+      <div class="joystick">
+        <header>multikey.js</header>
+        <div class="stick">
+          <div class="shadow"></div>
+          <div class="shaft"></div>
+          <div class="ball" id="ball"></div>
+        </div>
+        <div class="buttons">
+          <div>
+            <div class="button blue c1" id="q"></div>
+            <div class="button yellow c2" id="w"></div>
+            <div class="button slate c3" id="e"></div>
+            <div class="button gray c4" id="r"></div>      
+          </div>
+          <div>
+            <div class="button green c1" id="a"></div>
+            <div class="button red c2" id="s"></div>
+            <div class="button slate c3" id="d"></div>
+            <div class="button gray c4" id="f"></div>      
+          </div>    
+        </div>  
+      </div>  
+      "bash some keys + arrows"
+    </section>    
   </div>
-  <div class="buttons">
-    <div>
-      <div class="button blue c1" id="q"></div>
-      <div class="button yellow c2" id="w"></div>
-      <div class="button slate c3" id="e"></div>
-      <div class="button gray c4" id="r"></div>      
-    </div>
-    <div>
-      <div class="button green c1" id="a"></div>
-      <div class="button red c2" id="s"></div>
-      <div class="button slate c3" id="d"></div>
-      <div class="button gray c4" id="f"></div>      
-    </div>    
-  </div>  
-</section>
-
-<!--footer-->
-<footer> 
-
-  <a href="#" class="btn">fork me on github</a>
-</footer>
-<script src="controller.js"></script> 
-<script src="multikey.js"></script> 
+</div>
+<script src="js/controller.js"></script> 
+<script src="js/multikey.js"></script> 
 <script>multikey.setup(controller, "qwerasdf", true);</script>
 </body>
 </html>
