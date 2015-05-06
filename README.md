@@ -74,7 +74,7 @@ setup(cbfunc, keys, arrows)
 ----------
 Below is a quick screengrab of the script running once the user allows the sharing of their camera *(yep, it's a pitcure of me)*
 
-![Open Source icon](images/multikey.js.png)
+![Open Source icon](multikey.js.png)
 
 view the [example](index.html) file for more information.
 or check out the [live example](http://multikey.32teeth.org/) here
