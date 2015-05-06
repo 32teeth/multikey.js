@@ -1,0 +1,170 @@
+body
+{
+  font-family: 'Open Sans';
+  text-align: center;
+}
+
+.joystick
+{
+  width:320px;
+  height:200px;
+  display: block;
+  position:relative;
+  margin:50px auto;
+  border:solid 2px rgba(0,0,0,0.5);
+  border-radius:15px;
+  background: rgba(0,0,0,0.05);
+}
+
+header
+{
+  position:absolute;
+  top:15px;
+  left:20px;
+  padding:5px 10px;
+  border:solid 1px rgba(0,0,0,0.25);
+  border-radius:5px; 
+  border-color:rgba(0,0,0,0.25);
+  background:rgba(0,0,0,0.25); 
+  color:rgba(255,255,255,0.75);
+  font-size:14px;
+}
+
+.stick
+{
+  border-radius:100%;
+  background:rgba(0,0,0,0.25);
+  width:60px;
+  height:60px;
+  position:relative;
+  top:70px;
+  left:25px;
+}
+
+.shadow
+{
+  border-radius:100%;
+  background:rgba(0,0,0,0.25);
+  width:50px;
+  height:50px;
+  position:absolute;
+  left:5px;
+  top:5px;
+}
+
+.shaft
+{
+  border-radius:100%;
+  background:rgba(255,255,255,1);
+  width:16px;
+  height:16px;
+  position:absolute;
+  left:22px;
+  top:22px;
+}
+
+.ball
+{
+  border-radius:100%;
+  background:rgba(51,51,51,1);
+  width:44px;
+  height:44px;
+  position:absolute;
+  left:8px;
+  top:8px;
+  transition: all ease-out 50ms;
+}
+
+.buttons
+{
+  position:absolute;
+  display:table;
+  left:115px;
+  top:35px;
+}
+
+.button
+{
+  border:solid 2px rgba(0,0,0,0.25);
+  border-radius:100%;
+  background:rgba(0,0,0,0.5);
+  width:40px;
+  height:40px;
+  opacity: 0.5;  
+  transition: all ease-out 150ms; 
+  display:table-cell;
+  margin:2px;
+  float:left;
+  position:relative;
+}
+
+.button:before
+{
+  content:attr(id);
+  display:block;
+  font-size:14px;
+  color:rgba(255,255,255,1);
+  font-weight:bold;
+  width:40px;
+  height:25px;
+  padding-top:7px;
+  transition: all ease-out 150ms;    
+}
+
+.button.on
+{
+  opacity: 1;   
+  transition: all ease-out 150ms;   
+}
+
+.red
+{
+  background:rgba(204,0,0,0.5);
+  border-color:rgba(204,0,0,0.75);
+}
+
+.yellow
+{
+  background:rgba(204,204,0,0.5);
+  border-color:rgba(204,204,0,0.75);
+}
+
+.green
+{
+  background:rgba(51,204,0,0.5);
+  border-color:rgba(51,204,0,0.75);
+}
+
+.blue
+{
+  background:rgba(0,102,204,0.5);
+  border-color:rgba(0,102,204,0.75);
+}
+
+.slate
+{
+  background:rgba(153,153,153,0.5);
+  border-color:rgba(153,153,153,0.75);
+}
+
+.gray
+{
+  background:rgba(102,102,102,0.5);
+  border-color:rgba(102,102,102,0.75);
+}
+
+.c1
+{
+  top:35px;
+  left:5px;
+}
+
+.c2
+{
+  top:10px;
+}
+
+.c4
+{
+  top:12px;
+}
