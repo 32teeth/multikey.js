@@ -72,7 +72,6 @@ setup(cbfunc, keys, arrows)
 
 ##example
 ----------
-Below is a quick screengrab of the script running once the user allows the sharing of their camera *(yep, it's a pitcure of me)*
 
 ![Open Source icon](multikey.js.png)
 
